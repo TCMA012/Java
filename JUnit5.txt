@@ -1,0 +1,69 @@
+Junit 5 github
+
+
+
+https://cedp-artifactory.omega.dce-eir.net/ui/packages/gav:%2F%2Forg.junit.jupiter:junit-jupiter?name=junit&type=packages
+junit-jupiter (Group ID: org.junit.jupiter) 2023-08-22 10:42:27 -0400 | Latest version: 5.9.3
+
+
+
+https://junit.org/junit5/docs/current/user-guide/
+JUnit 5 requires Java 8 (or higher) at runtime.
+
+https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter/5.9.3/
+2023-04-26
+
+https://github.com/junit-team/junit5
+JUnit 5.10.0 (July 23, 2023)
+JDK 17
+
+
+
+
+https://confluence.isvcs.net/pages/viewpage.action?spaceKey=ITBCSR&title=JUnit+Tips
+
+
+
+https://confluence.isvcs.net/display/TNC/Unit+and+Integration+Testing+Principles?preview=%2F240618713%2F240632128%2FUnit+and+Integration+Testing+Principles+Final.pptx
+slide 20:
+Both Junit 4 and 5 frameworks are authorized for use
+
+
+
+
+https://www.vogella.com/tutorials/JUnit/article.html
+Eclipse
+Create a new project called 
+com.tcma.junit.first 
+Create a new source folder 
+test
+
+For this right-click on your project, select Properties and choose Java  Build Path. Select the Source tab.
+
+5.2. Create a Java class
+In the src folder, create the 
+com.tcma.junit.first 
+package and the following class.
+MyClass
+MyClassOK
+
+5.3. Create a JUnit test
+Right-click on your new class in the Package Explorer view and select 
+New  JUnit 4 Test Case.
+MyClassTest
+MyClassOKTest
+
+In the following wizard ensure that the New JUnit 4 test flag is selected and set the source folder to test, so that your test class gets created in this folder.
+com.tcma.junit.first/test
+
+
+
+
+Right-click on your new test class and select 
+Run-As  JUnit Test.
+
+
+The test is failing, because our multiplier class is currently not working correctly. It does a division instead of multiplication. Fix the bug and re-run the test to get a green bar.
+
+
+

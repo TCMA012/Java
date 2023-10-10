@@ -1,0 +1,39 @@
+JUnit 4.12 2023-08-17
+
+https://confluence.isvcs.net/pages/viewpage.action?spaceKey=ITBCSR&title=JUnit+Tips
+
+
+
+https://www.vogella.com/tutorials/JUnit4/article.html
+Eclipse
+Create a new project called 
+com.tcma.junit.first 
+Create a new source folder 
+test
+
+For this right-click on your project, select Properties and choose Java  Build Path. Select the Source tab.
+
+5.2. Create a Java class
+In the src folder, create the 
+com.tcma.junit.first 
+package and the following class.
+MyClass
+MyClassOK
+
+5.3. Create a JUnit test
+Right-click on your new class in the Package Explorer view and select 
+New  JUnit 4 Test Case.
+MyClassTest
+MyClassOKTest
+
+In the following wizard ensure that the New JUnit 4 test flag is selected and set the source folder to test, so that your test class gets created in this folder.
+com.tcma.junit.first/test
+
+
+
+
+Right-click on your new test class and select 
+Run-As  JUnit Test.
+
+
+The test is failing, because our multiplier class is currently not working correctly. It does a division instead of multiplication. Fix the bug and re-run the test to get a green bar.

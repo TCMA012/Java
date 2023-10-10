@@ -1,0 +1,19 @@
+Java EE 7
+SE 8
+JUnit 4.6
+Ant 1.10.5
+HTML5 Markup Validation Service
+Eclipse IDE 2018-09
+Struts 2.5.20
+Web Experience Toolkit (WET4)
+CSS, HTML, JavaScript and XML
+Axis 1.7.6
+RAMPART 1.7.1
+
+
+
+Maven 3.5.0
+
+
+
+www.javajee.com

@@ -1,0 +1,109 @@
+Mockito	3.10
+Mockito JUnit 5 extension
+
+
+
+https://confluence.isvcs.net/display/ITBAMP/Using+MOCKITO+for+JUNIT+Testing
+Select JUnit-5 as the test runner and click run.
+
+
+
+Mockito	3 tutorial
+https://www.javatpoint.com/examples-of-mockito-and-junit-in-eclipse-ide
+
+C:\angularCRA202307
+cd C:/angularCRA202307
+
+
+
+grep mockito -r --exclude-dir=target --include=pom.xml .
+
+
+./fesd_fesd-ext-ng_dev/fesd-ext-ng/fesd-ext-ejb/pom.xml:      <groupId>org.mockito</groupId>
+./fesd_fesd-ext-ng_dev/fesd-ext-ng/fesd-ext-ejb/pom.xml:      <artifactId>mockito-core</artifactId>
+./fesd_fesd-ext-ng_dev/fesd-ext-ng/pom.xml:           <groupId>org.mockito</groupId>
+./fesd_fesd-ext-ng_dev/fesd-ext-ng/pom.xml:           <artifactId>mockito-core</artifactId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/jmig-cvwmng-ejb/pom.xml:      <groupId>org.mockito</groupId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/jmig-cvwmng-ejb/pom.xml:      <artifactId>mockito-core</artifactId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/jmig-cvwmng-ejb/pom.xml:      <groupId>org.mockito</groupId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/jmig-cvwmng-ejb/pom.xml:      <artifactId>mockito-junit-jupiter</artifactId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/pom.xml:                <groupId>org.mockito</groupId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/pom.xml:                <artifactId>mockito-core</artifactId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/pom.xml:                    <!-- The mockito-core artifact and easymock artifact use different versions of objenesis (2.6 vs 3.1).
+./jmig_cvwm-ng_fall2023/cvwm-ng/pom.xml:                         Excluding the older version here to pass enforcer.  When next upgrading mockito-core, confirm whether this exclusion is still required. -->
+./jmig_cvwm-ng_fall2023/cvwm-ng/pom.xml:                <groupId>org.mockito</groupId>
+./jmig_cvwm-ng_fall2023/cvwm-ng/pom.xml:                <artifactId>mockito-junit-jupiter</artifactId>
+./nkca_webforms-ng_Development-IMOD-R3/webforms-ng/pom.xml:                     <groupId>org.mockito</groupId>
+./nkca_webforms-ng_Development-IMOD-R3/webforms-ng/pom.xml:                     <artifactId>mockito-inline</artifactId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/pom.xml:        <groupId>org.mockito</groupId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/pom.xml:        <artifactId>mockito-core</artifactId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/pom.xml:        <groupId>org.mockito</groupId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/pom.xml:        <artifactId>mockito-junit-jupiter</artifactId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-ejb/pom.xml:      <groupId>org.mockito</groupId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-ejb/pom.xml:      <artifactId>mockito-core</artifactId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-ejb/pom.xml:      <groupId>org.mockito</groupId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-ejb/pom.xml:      <artifactId>mockito-junit-jupiter</artifactId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-rest/pom.xml:      <groupId>org.mockito</groupId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-rest/pom.xml:      <artifactId>mockito-core</artifactId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-rest/pom.xml:      <groupId>org.mockito</groupId>
+./xxxx_maven-ngdemo_master/maven-ngdemo/xxxx-mavenngdemo-rest/pom.xml:      <artifactId>mockito-junit-jupiter</artifactId>
+
+
+
+
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>3.1.0</version>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-junit-jupiter</artifactId>
+        <version>3.1.0</version>
+		
+		
+		
+grep junit -r --exclude-dir=target --include=pom.xml .
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+
+
+
+grep "commons-lang3" -rl --exclude-dir=target --include=pom.xml .
+./fesd_fesd-ext-ng_dev/fesd-ext-ng/fesd-ext-ejb/pom.xml
+./gzgs_cus_Fall_2023_Dev/cus/gzgs-batch/gzgs-cus-upld-batch-ejb/pom.xml
+./gzgs_cus_Fall_2023_Dev/cus/gzgs-external/gzgs-cus-cess-external-ejb/pom.xml
+./gzgs_cus_Fall_2023_Dev/cus/pom.xml
+./jmig_cvwm-ng_fall2023/cvwm-ng/jmig-cvwmng-ejb/pom.xml
+./jmig_cvwm-ng_fall2023/cvwm-ng/jmig-cvwmng-rest/pom.xml
+./jmig_cvwm-ng_fall2023/cvwm-ng/pom.xml
+./nkca_webforms-ng_Development-IMOD-R3/webforms-ng/pom.xml
+
+
+
+
+grep "spring-web" -rl --exclude-dir=target --include=pom.xml .
+grep "spring" -rl --exclude-dir=target --include=pom.xml .
+
+
+
+
+https://www.javatpoint.com/examples-of-mockito-and-junit-in-eclipse-ide
+com.tcma.mockito.first 
+
+
+
+https://www.baeldung.com/mockito-junit-5-extension
+https://github.com/eugenp/tutorials/tree/master/parent-java
+https://github.com/eugenp/tutorials/tree/master/testing-modules/mockito-simple
+
+
+
+C:
+
+cd  C:\JUnit\eugenp_tutorials_master\eugenp_tutorials_master_parent-java\eugenp_tutorials_master_testing-modules-mockito-simple
+
+mvn clean install
+
+
+
+mvn -U install
+

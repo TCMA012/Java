@@ -1,0 +1,27 @@
+super causes NullPointerException
+super() causes NullPointerException
+
+https://stackoverflow.com/questions/31999287/super-causes-nullpointerexception
+
+The important thing to understand is that the parent class' constructor is called before the child class is even initialized (which is why super() always has to be the first call in a constructor), meaning when MyAbstractList's constructor is running, data is still null.
+
+Replacing the super() call with its contents means the for loop is executed while MyArrayList is initializing, after data has been properly set.
+
+In essence, the problem is that MyAbstractList provides a constructor that calls methods that will be overridden by a child class, which is a serious anti-pattern. 
+MyAbstractList should not provide an add-all style constructor.
+
+For more, see Effective Java Item 17, which notes:
+
+Constructors must not invoke overridable methods, directly or indirectly. If you violate this rule, program failure will result. The superclass constructor runs before the subclass constructor, so the overriding method in the subclass will get invoked before the subclass constructor has run. If the overriding method depends on any initialization performed by the subclass constructor, the method will not behave as expected.
+
+===
+
+The problem here is that the constructor in MyAbstractList is calling add before data has been initialized.
+
+The data field is declared and initialized in the MyArrayList class. But the initialization doesn't occur until after the superclass initialization has finished, and the add calls are made during the superclass initialization ... when data is still null.
+
+===
+
+The general problem here is that it is dangerous for a constructor to call a method that could be overridden by a subclass. The override method is liable to be called before the subclass initialization has occurred.
+
+In this case, add(E) could be overridden. Worse still, add(E) calls add(E, int) which definitely is overridden, because it is abstract in the superclass.

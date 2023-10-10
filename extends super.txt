@@ -1,0 +1,3 @@
+extends super
+The constraint possibilities are 'extends' and 'super' 
+is this class to operate with assignable to that other one (extends), or is this class assignable from that one (super).

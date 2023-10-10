@@ -1,0 +1,8 @@
+Initialising Fields Before Superconstructor Call
+initialisingfieldsbeforesuperconstructorcall
+initialisingfieldsbeforesuperconstructorcallbetter
+
+https://www.javaspecialists.eu/archive/Issue086-Initialising-Fields-Before-Superconstructor-Call.html
+In your call to 
+super(), you cannot call any non-static methods of your class, because this has not been initialised yet. However, you may 
+call static methods.

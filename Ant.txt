@@ -1,0 +1,69 @@
+Update to Apache Ant 1.10.12.
+Apache Ant 1.10.5 is being updated to Apache Ant 1.10.12.
+ant -version
+
+
+
+
+ANT_HOME
+%ORACLE_HOME%\oracle_common\modules\thirdparty\org.apache.ant\1.10.5.0.0\apache-ant-1.10.5
+CLASSPATH
+%JRE_HOME%\lib;%ORACLE_HOME%\wlserver\server\lib;%ANT_HOME%\lib;%CLASSPATH%;
+PATH
+Add:
+%ANT_HOME%\bin
+
+
+Configure Ant to use a specific JRE/JDK
+From the menu, choose Run -> External Tools -> External Tools Configurations (or use the equivalent toolbar button toolbar button)
+Select your Ant Build from the list.
+Click the JRE tab (external tools tabs )
+Click Separate JRE and pick the required JRE from the list.
+Click Apply, then Close (or Run if you want to run your Ant build script now).
+
+=
+
+https://ant.apache.org/manual/install.html#setup
+ANT_HOME CLASSPATH
+
+ANT_HOME to the directory you uncompressed Ant to, and 
+add
+%ANT_HOME%\bin (Windows) to your PATH.
+
+=
+
+Steps to export Ant build specification from Eclipse:
+Open the Java project in Eclipse
+Right click the project
+Go to Export
+In the General section select Ant build files and click "Next"
+Select the project you want to build, un-check "Create target to compile project using Eclipse compiler", and click "Finish"
+
+=
+
+Steps to build the project in cli using Ant
+Open cmd console
+Ensure that Apache Ant bin path is added to PATH env variable
+Go to the folder where build.xml file is generated and saved
+Runt "ant -f <Project-Folder>/build.xml clean build"
+
+
+
+The external libraries required by each of the optional tasks is detailed in the Library Dependencies section. These external libraries must be added to Ant's classpath, in any of the following ways:
+
+In ANT_HOME/lib. This makes the JAR files available to all Ant users and builds.
+
+In ${user.home}/.ant/lib (since Ant 1.6). This allows different users to add new libraries to Ant. All JAR files added to this directory are available to command-line Ant.
+
+On the command line with a -lib parameter. This lets you add new JAR files on a case-by-case basis.
+
+In the CLASSPATH environment variable. Avoid this; it makes the JAR files visible to all Java applications, and causes no end of support calls. See below for details.
+
+
+
+In some <classpath> accepted by the task itself. Since Ant 1.7.0, you can 
+run the <junit> task 
+without junit.jar in Ant's own classpath, so long as it is included (along with your program and tests) in the classpath passed when running the task.
+
+Where possible, this option is generally to be preferred, as the Ant script itself can determine the best path to load the library from: via relative path from the basedir (if you keep the library under version control with your project), according to Ant properties, environment variables, Ivy downloads, whatever you like.
+

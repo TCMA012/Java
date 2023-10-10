@@ -1,0 +1,18 @@
+What's wrong with overridable method calls in constructors?
+https://stackoverflow.com/questions/3404301/whats-wrong-with-overridable-method-calls-in-constructors
+an explicit two phase component initialization process in the framework's lifecycle of constructing a component i.e.
+
+Construction - via constructor
+Initialization - via onInitilize (after construction when virtual methods work!)
+There was quite an active debate about whether it was necessary or not (it fully is necessary IMHO) as this link demonstrates http://apache-wicket.1842946.n4.nabble.com/VOTE-WICKET-3218-Component-onInitialize-is-broken-for-Pages-td3341090i20.html)
+
+The good news is that the excellent devs at Wicket did end up introducing two phase initialization (to make the most aweseome Java UI framework even more awesome!) so with Wicket you can do all your post construction initialization in the onInitialize method that is called by the framework automatically if you override it - at this point in the lifecycle of your component its constructor has completed its work so virtual methods work as expected.
+
+===
+
+This error can occur when 
+a constructor calls a non-final method of its class. A problem results if this method is overridden by a derived class and that method returns a value that was initialized during instance variable initialization.
+
+===
+
+Java two phase initialization 
