@@ -1,0 +1,21 @@
+The library already owns these titles:
+Spring Boot and Angular: Hands-on full stack web development with Java, Spring, and Angular
+Devlin Basilan Duldulao, Seiji Ralph Villafranca
+Microsoft MVP 
+
+Building Offline Applications with Angular: Develop Reliable, Performant Web Applications for Desktop and Mobile Platforms
+Venkata Keerti Kotaru
+Apress
+https://github.com/Apress/Building-Offline-Applications-with-Angular
+
+Spring Start Here: Learn what you need and learn it well
+Laurentiu Spilca 
+
+Cloud Native Spring in Action : With Spring Boot and Kubernetes
+Thomas Vitale
+Manning
+
+Node.js Design Patterns
+Design and Implement Production-grade Node.js Applications Using Proven Patterns and Techniques
+Casciaro, Mario
+
